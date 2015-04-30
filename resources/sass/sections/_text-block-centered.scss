@@ -1,0 +1,44 @@
+#text-block-centered {
+    h1 {
+        margin: 0 0 40px 0;
+    }
+
+    .case-content__meta {
+        margin-top: 50px;
+
+        table {
+            border-collapse: collapse;
+        }
+        td {
+            padding: 10px 0;
+        }
+        .label {
+            font-weight: 800;
+
+            padding-right: 30px;
+        }
+    }
+
+    .stats {
+        margin-top: 50px;
+    }
+
+    .case-imagery {
+        margin-top: 100px;
+
+        .media {
+            margin-top: 40px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+    .caption {
+        margin-top: 40px;
+    }
+}
+
+.text-center {
+    text-align: center;
+}

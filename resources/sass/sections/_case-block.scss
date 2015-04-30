@@ -1,0 +1,64 @@
+#case-block {
+    .media {
+        position: relative;
+
+        float: left;
+        overflow: hidden;
+
+        width: 50%;
+
+        &::before {
+            font-weight: 500;
+
+            position: absolute;
+            top: 16px;
+            left: -50px;
+
+            overflow: hidden;
+
+            padding: 6px 66px;
+
+            content: "Case";
+            -webkit-transform: rotate(-45deg); /* Safari */
+            -ms-transform: rotate(-45deg); /* IE 9 */
+            transform: rotate(-45deg);
+
+            color: #ffffff;
+            background: $action;
+        }
+    }
+    .case-content {
+        float: right;
+
+        width: 50%;
+        padding: 40px 70px;
+
+        background: $paper-middle;
+
+        .title-small {
+            margin: 0;
+        }
+    }
+
+    @media #{$small-only} {
+        .media {
+            width: 100%;
+        }
+        .case-content {
+            width: 100%;
+            padding: 15px;
+        }
+    }
+    @media #{$medium-only} {
+        .media {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+        .case-content {
+            width: 100%;
+            padding: 35px;
+        }
+    }
+}

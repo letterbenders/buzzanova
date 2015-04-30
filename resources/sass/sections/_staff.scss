@@ -1,0 +1,77 @@
+#staff {
+    .caption {
+        margin-top: 30px;
+
+        text-align: center;
+    }
+
+    .staff__item {
+        margin-top: 80px;
+
+        text-align: center;
+        p {
+            margin: 0;
+        }
+
+        .media {
+            img {
+                width: 175px;
+                height: 175px;
+
+                border-radius: 50%;
+            }
+        }
+        .name {
+            font-size: rem-calc(20);
+            font-weight: 500;
+
+            margin-top: 15px;
+
+            text-transform: uppercase;
+
+            color: $action;
+        }
+
+        .phone {
+            font-size: rem-calc(14);
+
+            margin-top: 20px;
+
+            color: #7a7e85;
+        }
+
+        .email {
+            font-size: rem-calc(14);
+
+            margin: 0;
+
+            color: #7a7e85;
+            a {
+                font-weight: 200;
+
+                color: #7a7e85;
+
+                &:hover {
+                    color: $action;
+                }
+            }
+        }
+
+        .linkedin {
+            font-size: rem-calc(14);
+
+            margin-top: 10px;
+            a {
+                font-weight: 200;
+
+                text-decoration: underline;
+
+                color: #7a7e85;
+
+                &:hover {
+                    color: $action;
+                }
+            }
+        }
+    }
+}

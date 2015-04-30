@@ -1,0 +1,48 @@
+@import url(http://fonts.googleapis.com/css?family=Dosis:200,500,600);
+
+body {
+    font-family: "Dosis", sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+
+    color: $black;
+}
+
+p {
+    font-family: "Dosis", sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Dosis", sans-serif;
+
+    color: inherit;
+}
+
+h1, .h1 {
+    font-size: rem-calc(42);
+    font-weight: 200;
+}
+
+h2, .h2 {
+    font-size: rem-calc(26);
+    font-weight: 200;
+}
+
+h3, .h3 {
+    font-size: rem-calc(22);
+}
+
+h4, .h4 {
+    font-size: rem-calc(18);
+}
+
+h5, .h5 {
+    font-size: rem-calc(16);
+}
+
+h6, .h6 {
+    font-size: rem-calc(14);
+}
