@@ -1,0 +1,37 @@
+.slick-prev, .slick-next {
+    position: absolute;
+    top: 50%;
+
+    overflow: hidden;
+
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+
+    text-indent: -1000px;
+
+    border: 0;
+    outline: 0;
+}
+
+.slick-prev {
+    left: 0;
+
+    background: url(../images/arrow_left_white.svg) no-repeat center center;
+
+    .dark & {
+        background: url(../images/arrow_left_black.svg) no-repeat center center;
+    }
+}
+
+
+
+.slick-next {
+    right: 0;
+
+    background: url(../images/arrow_right_white.svg) no-repeat center center;
+
+    .dark & {
+        background: url(../images/arrow_right_black.svg) no-repeat center center;
+    }
+}

@@ -1,0 +1,32 @@
+.case-tab {
+    position: relative;
+
+    padding: 30px 0;
+
+    text-align: center;
+
+    @media #{$small-only} {
+        display: none;
+    }
+
+
+
+    &.selected {
+        color: $white;
+        background: $action;
+
+        @media #{$small-only} {
+            display: block;
+        }
+
+        &:before {
+            @include css-triangle(10px, $action, bottom);
+
+            position: absolute;
+            top: -20px;
+            left: 50%;
+
+            margin-left: -10px;
+        }
+    }
+}

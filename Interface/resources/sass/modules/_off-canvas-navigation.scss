@@ -1,0 +1,54 @@
+.off-canvas-navigation {
+    position: fixed;
+    right: 0;
+
+    visibility: hidden;
+    overflow-y: auto;
+
+    width: 200px;
+    height: 100%;
+    padding: 20px 30px;
+
+    color: $white;
+    background: $action;
+
+    &.visible {
+        visibility: visible;
+    }
+
+    a {
+        color: $white;
+    }
+
+    ul {
+        margin: 0;
+
+        list-style: none;
+    }
+
+
+    li {
+        font-size: 21px;
+        font-weight: 500;
+        line-height: 1.2em;
+
+        padding: 10px 0;
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+
+    ul.subnav {
+        padding-left: 30px;
+        li {
+            font-size: 15px;
+        }
+    }
+
+    .user-actions {
+        margin-top: 30px;
+
+        border-top: 1px solid $white;
+    }
+}

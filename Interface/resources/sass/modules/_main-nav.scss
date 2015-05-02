@@ -1,0 +1,223 @@
+.page-header {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    padding: 30px 0;
+
+    transition: transform 400ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+    transform: translateZ(0);
+
+    border-bottom: 1px solid #dbdbdb;
+    background: $white;
+
+    backface-visibility: hidden;
+
+    &.compact {
+        padding: 15px 0;
+    }
+
+    @media #{$small-only} {
+        padding: 15px 0;
+
+        .reveal-navigation & {
+            transform: translateX(-200px);
+        }
+    }
+}
+.header-spacer {
+    height: 89px;
+    // skal være samme højde som headeren
+
+    @media #{$small-only} {
+        height: 58px;
+    }
+}
+
+
+.main-nav {
+    float: right;
+
+    margin: 0;
+    padding: 0;
+
+    color: $black;
+    @media #{$small-only} {
+        display: none;
+    }
+
+    li {
+        display: inline-block;
+
+        margin-right: 30px;
+
+        list-style-type: none;
+
+        a {
+            font-size: rem-calc(18);
+            font-weight: 500;
+
+            color: currentColor;
+
+            &:hover {
+                text-decoration: none;
+
+                color: $action;
+            }
+        }
+
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+
+    .action-btn {
+        padding: 5px 30px;
+
+        text-transform: capitalize;
+
+        color: #ffffff;
+
+        &:hover {
+            color: #ffffff !important;
+        }
+    }
+}
+.logo {
+    @include transition(0.2s);
+
+    display: block;
+
+    width: 170px;
+    height: 28px;
+
+
+    &:hover {
+        opacity: 0.6;
+    }
+}
+
+.logo-black {
+    background: url(../images/logo_black.svg) no-repeat;
+}
+
+.logo-white {
+    background: url(../images/logo_white.svg) no-repeat;
+}
+
+
+@media #{$small-only} {
+    .mobile-trigger {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+
+        width: 40px;
+        height: 40px;
+
+        cursor: pointer;
+
+        color: $black;
+
+        span {
+            @include transition-delay(0s);
+            @include transition-duration(0.2s);
+
+            position: relative;
+            top: 18px;
+
+            margin: 0 auto;
+        }
+        span:before, span:after {
+            @include transition(margin 0.2s, transform 0.2s);
+
+            position: absolute;
+
+            content: "";
+        }
+        span, span:before, span:after {
+            display: block;
+
+            width: 30px;
+            height: 3px;
+
+            background-color: currentColor;
+        }
+        span:before {
+            margin-top: -10px;
+        }
+        span:after {
+            margin-top: 10px;
+        }
+
+        &.active span {
+            @include transition-delay(0s);
+
+            background-color: transparent;
+        }
+        &.active span:before {
+            @include transition-delay(0, 0.2s);
+            @include rotate(45deg);
+
+            margin-top: 0;
+        }
+        &.active span:after {
+            @include transition-delay(0, 0.2s);
+            @include rotate(-45deg);
+
+            margin-top: 0;
+        }
+    }
+}
+
+.frontpage, .home {
+    .page-header {
+        border: none;
+        background: transparent;
+
+        .logo {
+            @extend .logo-white;
+        }
+        .mobile-trigger {
+            color: $white;
+        }
+        .main-nav {
+            color: $white;
+        }
+
+
+
+        &.compact {
+            border-bottom: 1px solid #dbdbdb;
+            background: $white;
+
+            .logo {
+                @extend .logo-black;
+            }
+
+            .main-nav {
+                color: $black;
+            }
+
+            .mobile-trigger {
+                color: $black;
+            }
+        }
+        @media #{$small-only} {
+            border-bottom: 1px solid #dbdbdb;
+            background: $white;
+
+            .logo {
+                background: url(../images/logo_black.svg) no-repeat;
+            }
+
+            .mobile-trigger {
+                color: $black;
+            }
+        }
+    }
+}
