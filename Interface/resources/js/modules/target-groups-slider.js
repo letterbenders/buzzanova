@@ -5,13 +5,23 @@ define(['jquery', 'slick'], function ($) {
 
     // Overlay
     var isOverlayVisible = false;
+    var overlayMoved = false;
     var $overlay = $('.section-overlay');
+    var $container = $('#overlayed');
 
     var showOverlay = function () {
+        if (window.innerWidth <= 640) {
+            overlayMoved = true;
+            $('body').append($overlay);
+        }
         $overlay.addClass('show');
         isOverlayVisible = true;
     }
     var hideOverlay = function () {
+        if (overlayMoved) {
+            overlayMoved = false;
+            $container.append($overlay);
+        }
         $overlay.removeClass('show');
         isOverlayVisible = false;
     }
