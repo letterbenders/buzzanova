@@ -24,6 +24,7 @@ define(['jquery'], function ($) {
                     $container.html(content);
                     $productLinks.removeClass('active');
                     $this.addClass('active');
+                    $(document).foundation('equalizer','reflow');
                 } else {
                     // could not find the product content on the page content so we are redirecting
                     window.location = pageurl;
