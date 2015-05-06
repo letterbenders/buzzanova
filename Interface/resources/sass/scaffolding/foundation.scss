@@ -1,4 +1,4 @@
-@charset 'UTF-8';
+@charset "UTF-8";
 // Foundation by ZURB
 // foundation.zurb.com
 // Licensed under MIT Open Source
@@ -6,10 +6,10 @@
 // Make sure the charset is set appropriately
 
 // Behold, here are all the Foundation components.
-@import 'foundation/components/grid';
+@import "foundation/components/grid";
 // @import 'foundation/components/accordion';
 // @import 'foundation/components/alert-boxes';
-@import 'foundation/components/block-grid';
+@import "foundation/components/block-grid";
 // @import 'foundation/components/breadcrumbs';
 // @import 'foundation/components/button-groups';
 // @import 'foundation/components/buttons';
@@ -41,5 +41,5 @@
 // @import 'foundation/components/tooltips';
 // @import 'foundation/components/top-bar';
 // @import 'foundation/components/type';
-@import 'foundation/components/offcanvas';
+@import "foundation/components/offcanvas";
 // @import 'foundation/components/visibility';
