@@ -8,10 +8,43 @@
     margin-top: 20px;
     padding: 30px 0;
 
-    text-align: center;
-
     @media #{$small-only} {
         display: none;
+    }
+
+    .case-logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 40%;
+        height: 100%;
+
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            display: block;
+
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .case-description {
+        float: right;
+
+        width: 60%;
+
+        h3 {
+            font-size: rem-calc(20);
+
+            text-transform: uppercase;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
     }
 
 
