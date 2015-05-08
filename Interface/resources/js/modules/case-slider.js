@@ -17,7 +17,26 @@ define(['jquery', 'slick'], function ($) {
         asNavFor: '#cases-slider',
         arrows: false,
         centerMode: true,
-        focusOnSelect: true
+        centerPadding: '0px',
+        focusOnSelect: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+
+        ]
+
+
+
     });
 
 

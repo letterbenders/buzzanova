@@ -74,16 +74,19 @@
         }
     }
 
+    .nav-btn {
+        a {
+            @extend .action-btn;
 
-    .action-btn {
-        padding: 5px 30px;
+            padding: 5px 30px;
 
-        text-transform: capitalize;
+            text-transform: capitalize;
 
-        color: #ffffff;
+            color: #ffffff;
 
-        &:hover {
-            color: #ffffff !important;
+            &:hover {
+                color: #ffffff !important;
+            }
         }
     }
 }

@@ -2,4 +2,41 @@
     .tabs {
         background: $paper-middle;
     }
+
+
+
+    .case {
+        position: relative;
+        .case-cta {
+            position: absolute;
+            top: 50%;
+
+            width: 100%;
+
+            transform: translateY(-50%);
+
+
+            h1 {
+                font-size: rem-calc(54);
+                line-height: rem-calc(64);
+
+                color: $white;
+            }
+
+
+            a {
+                font-size: rem-calc(16);
+                line-height: 1;
+
+                display: inline-block;
+
+                margin-top: 20px;
+                padding: 10px 20px;
+
+                text-transform: uppercase;
+
+                border: 2px solid currentColor;
+            }
+        }
+    }
 }

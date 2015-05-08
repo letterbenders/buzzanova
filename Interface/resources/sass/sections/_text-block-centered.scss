@@ -37,6 +37,19 @@
     .caption {
         margin-top: 40px;
     }
+    .case-nav {
+        margin-top: 60px;
+
+        a {
+            color: $black;
+        }
+        &__back {
+            float: left;
+        }
+        &__next {
+            float: right;
+        }
+    }
 }
 
 .text-center {
