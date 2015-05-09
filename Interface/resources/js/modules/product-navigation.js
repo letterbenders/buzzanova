@@ -38,6 +38,12 @@ define(['jquery'], function ($) {
 
         });
 
+
+        if (window.innerWidth>640) {
+            $productLinks.first().click();
+        }
+
+
     }
 
 

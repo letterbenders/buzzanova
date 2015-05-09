@@ -7,6 +7,20 @@
 
     .case {
         position: relative;
+
+        figure {
+            height: 600px;
+
+            @media #{$medium-only} {
+                height: 500px;
+            }
+
+            @media #{$small-only} {
+                height: 400px;
+            }
+        }
+
+
         .case-cta {
             position: absolute;
             top: 50%;
