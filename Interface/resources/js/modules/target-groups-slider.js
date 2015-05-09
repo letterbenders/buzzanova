@@ -13,6 +13,10 @@ define(['jquery', 'slick'], function ($) {
         if (window.innerWidth <= 640) {
             overlayMoved = true;
             $('body').append($overlay);
+        } else {
+            //scroll to the top of the section plus header height
+            var scrollpos = $container.offset().top - 59;
+            $('body').scrollTop(scrollpos);
         }
         $overlay.addClass('show');
         isOverlayVisible = true;
