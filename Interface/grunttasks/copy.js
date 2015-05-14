@@ -38,7 +38,7 @@ module.exports = {
 			//Images
 			expand: true,
 			cwd: '<%= package.resources %>/images/',
-			src: ['**/*.{png,jpg,gif,svg}'],
+			src: ['**'],
 			dest: '<%= package.prototyperesources %>/images'
 
 		}]
