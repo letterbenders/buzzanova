@@ -12,6 +12,11 @@
 
     border: 0;
     outline: 0;
+
+
+    @media #{$small-only} {
+        width: 50px;
+    }
 }
 
 .slick-prev {

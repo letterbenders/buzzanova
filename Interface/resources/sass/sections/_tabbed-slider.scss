@@ -51,6 +51,10 @@
 
                 border: 2px solid currentColor;
             }
+
+            @media #{$small-only} {
+                text-align: center;
+            }
         }
     }
 }
