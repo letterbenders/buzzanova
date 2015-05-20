@@ -22,7 +22,7 @@
 
         text-align: center;
 
-        border: 1px solid $black;
+        border: 2px solid $action;
         border-radius: 50%;
     }
 
@@ -36,6 +36,6 @@
 
 .stats--white {
     .stats__count {
-        border: 1px solid #ffffff;
+        border: 2px solid #ffffff;
     }
 }

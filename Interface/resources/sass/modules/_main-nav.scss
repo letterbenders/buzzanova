@@ -74,6 +74,10 @@
         }
     }
 
+    .current-menu-item {
+        border-top: 4px solid $action;
+    }
+
     .nav-btn {
         a {
             @extend .action-btn;
