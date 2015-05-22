@@ -2,6 +2,13 @@
 define(['jquery', 'skrollr'], function ($, skrollr) {
     'use strict';
 
+    $('.hero__arrow').on('click', function(){
+        var scrollto =  $(this).closest('section').height();
+        $('body').animate({scrollTop: scrollto});
+
+    });
+
+
     if (!Modernizr.touch) {
 
         $('[data-hero-video]').each(function(){

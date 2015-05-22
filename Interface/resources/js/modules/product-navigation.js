@@ -1,5 +1,5 @@
 /*global define:false, Modernizr:false */
-define(['jquery'], function ($) {
+define(['jquery', 'foundation-loader'], function ($) {
     'use strict';
     var $container = $('[data-product-container]');
     var $productLinks = $('[data-product-link]');
