@@ -99,7 +99,7 @@ figure {
 
     backface-visibility: hidden;
 
-    @media #{$small-only} {
+    @media (max-width: 768px) {
         //height: auto;
 
         .reveal-navigation & {
