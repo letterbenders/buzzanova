@@ -6,7 +6,7 @@
     }
 
     .content-selector {
-        @include transition(0.5s);
+        @include transition(background 0.5s);
 
         position: relative;
 
