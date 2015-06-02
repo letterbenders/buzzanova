@@ -73,6 +73,10 @@
     }
 
     @media #{$small-only} {
+        .media {
+            height: 280px;
+        }
+
         .case-nav {
             position: static;
             bottom: 0;
@@ -117,6 +121,12 @@
                     padding-right: 20px;
                 }
             }
+        }
+    }
+
+    @media #{$medium-only} {
+        .media {
+            height: 400px;
         }
     }
 }
