@@ -25,6 +25,8 @@ define(['jquery', 'foundation-loader'], function ($) {
                     $productLinks.removeClass('active');
                     $this.addClass('active');
                     $(document).foundation('equalizer','reflow');
+                    $(document).trigger('new-product-page');
+
                 } else {
                     // could not find the product content on the page content so we are redirecting
                     window.location = pageurl;
